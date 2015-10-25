@@ -1,0 +1,22 @@
+{
+  "nodes":[
+    {"hc":0,"mc":0,"lc":0,"nc":0,"grouptype":-19,"importance":6,"name":"ME"},
+    {"hc":49,"mc":10,"lc":15,"nc":25,"grouptype":2,"importance":6,"name":"Footy Club"},
+    {"hc":80,"mc":20,"lc":0,"nc":0,"grouptype":3,"importance":3,"name":"Using Mates"},
+    {"hc":0,"mc":0,"lc":50,"nc":50,"grouptype":4,"importance":1,"name":"Work"},
+    {"hc":25,"mc":25,"lc":25,"nc":20,"grouptype":5,"importance":6,"name":"Best Friends"}
+  ],
+  "links":[
+    {"source":0,"target":1,"hide":"f","magnitude":"l","type":"conflict"},
+    {"source":1,"target":0,"hide":"t","magnitude":"l","type":"conflict"},
+    {"source":0,"target":1,"hide":"f","magnitude":"l","type":"common"},
+    {"source":0,"target":2,"hide":"f","magnitude":"h","type":"common"},
+    {"source":1,"target":2,"hide":"f","magnitude":"h","type":"conflict"},
+    {"source":0,"target":4,"hide":"f","magnitude":"h","type":"common"},
+    {"source":3,"target":0,"hide":"f","magnitude":"l","type":"conflict"},
+    {"source":3,"target":1,"hide":"f","magnitude":"h","type":"common"},
+    {"source":3,"target":4,"hide":"f","magnitude":"l","type":"common"},
+    {"source":4,"target":2,"hide":"f","magnitude":"l","type":"conflict"},
+    {"source":4,"target":2,"hide":"f","magnitude":"l","type":"common"}
+  ]
+}

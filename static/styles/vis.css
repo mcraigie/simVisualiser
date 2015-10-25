@@ -1,0 +1,44 @@
+#dataset_textarea {
+	display: none;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+.node {
+  opacity: 1;
+}
+
+.node:hover {
+  opacity: 1;
+}
+
+.node text {
+	pointer-events: none;
+	font: 14px sans-serif;
+}
+
+#me_node_text {
+	font: 25px sans-serif;
+}
+
+.link {
+  stroke: #0000FF;
+  stroke-opacity: 0.5;
+}
+
+.conflict_link {
+	stroke: #990012;
+	stroke-opacity: 0.6;
+}
+
+.duplicate_link {
+	stroke-opacity: 0.0;
+}
