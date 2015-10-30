@@ -33,7 +33,7 @@ static_config = {
 			},
 		'/':
 			{
-				'tools.staticdir.root' : '/home/max/sim'
+				'tools.staticdir.root': os.path.dirname(os.path.abspath(__file__))
 			}
 }
 
