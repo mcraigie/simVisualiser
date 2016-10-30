@@ -1,5 +1,7 @@
 //built based on examples provided by http://bl.ocks.org/mbostock 2015
 
+var dataDir = dataDir || "";
+
 function group(d) { return d.grouptype; }
 var color = d3.scale.category20b();
 function colorByGroup(d) { return color(group(d)); }
@@ -20,7 +22,7 @@ svg.append("g").attr("id", "nodes")
 
 //load in the legend
 svg.append("image")
-	.attr("xlink:href", "images/lengend.png")
+	.attr("xlink:href", dataDir + "images/lengend.png")
 	.attr("x", 0)
 	.attr("y", 0)
 	.attr("width", 151)
@@ -84,7 +86,7 @@ force.on('tick', function() {
 var dataset = document.getElementById('dataset_textarea').value;
 
 //load in the dataset
-d3.json('datasets/'+dataset+'.json', function(err, data) {
+d3.json(dataDir +'datasets/'+dataset+'.json', function(err, data) {
 
 	//give each node an id. TODO: investigate putting the id in the JSON
 	data.nodes.forEach(function(d, i) {

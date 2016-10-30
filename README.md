@@ -13,5 +13,3 @@ python main.py
 
 You will need to reconfigure CherryPy to use your own interface.
 
-A demonstration version is available online here:
-http://139.162.6.31:8080/
