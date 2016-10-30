@@ -17,8 +17,8 @@ var svg = d3.select('#viz')
 	.attr('height', height);
 
 //used in getting the links to appear underneath the nodes
-svg.append("g").attr("id", "links")
-svg.append("g").attr("id", "nodes")
+svg.append("g").attr("id", "links");
+svg.append("g").attr("id", "nodes");
 
 //load in the legend
 svg.append("image")
@@ -74,7 +74,7 @@ force.on('tick', function() {
 	clip.enter().append('clipPath')
 		.attr('id', function(d) { return 'clip-'+d.point.index; })
 		.attr('class', 'clip');
-	clip.exit().remove()
+	clip.exit().remove();
 
 	clip.selectAll('path').remove();
 	clip.append('path')
