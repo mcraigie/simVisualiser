@@ -8,6 +8,9 @@ simVisualiser uses CherryPy and D3 to achieve to create the visualisation.
 The D3 code would not have been possible without the examples provided online by Mike Bostock.
 http://bost.ocks.org/mike/
 
+You can see a demo here:
+https://mcraigie.github.io/simVisualiser/
+
 Start the webserver:
 python main.py
 
